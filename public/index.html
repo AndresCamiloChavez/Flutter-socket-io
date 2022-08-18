@@ -17,7 +17,7 @@
         console.log("Contectado al servidor");
       });
       socket.on('bands', function(objs){
-      console.table(objs);
+      console.table(objs.bands);
       })
       socket.on("disconnet", function () {
         console.log("Perdimos la comunicación con el servidor");
