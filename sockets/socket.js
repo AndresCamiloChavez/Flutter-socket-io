@@ -3,10 +3,6 @@ const Bands = require('../models/bands');
 const Band = require('../models/band');
 const bands = new Bands();
 
-bands.addBand( new Band('Queen') );
-bands.addBand( new Band('Bon Jovi') );
-bands.addBand( new Band('Héroes del silencio') );
-
 console.log(bands);
 //mensajes de Sockets
 io.on('connection', client => {
