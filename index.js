@@ -2,6 +2,11 @@ const express = require('express'); //es como una importación
 const path = require('path');
 require('dotenv').config();
 
+
+//DB Config
+
+const { dbConnection } = require('./database/config').dbConnection();
+
 //App de Express
 const app = express();
 
