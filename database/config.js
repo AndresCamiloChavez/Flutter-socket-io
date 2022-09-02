@@ -5,7 +5,7 @@ const dbConnection = async () => {
         await mongoose.connect(process.env.DB_CNN, {
             autoIndex: true
         });
-        console.log('DB Online');
+        console.log('DB Online!');
     }catch(error){
         console.log(error);
         throw new Error('Error en la base de datos - Hable con el admin');
